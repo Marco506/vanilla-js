@@ -1,3 +1,6 @@
+
+
+//Clonar Arreglo
 function clonarArreglo(arreglo) {
     return [...arreglo];
 };
@@ -7,7 +10,7 @@ console.log("arreglo clonado es",arregloClonado);
 
 
 
-
+//Clonar objeto
 function clonarObjeto(objeto) {
     return {...objeto}
 }
@@ -20,10 +23,23 @@ console.log("El objeto clonado es", objetoClonado);
 
 
 
-
+//Funcion sumar
 function sumar(...numeros){
-return numeros.reduce
+return numeros.reduce((acomulador, numeroActual)=>acomulador + numeroActual, 0)
 }
+
+console.log("suma", sumar(10, 8, 3));
+console.log("suma", sumar(4, 5, 9, 10, 166));
+
+
+
+//Funcion saludar
+function saludar(nombre = "desconocido") {
+    return `hola ${nombre}`
+}
+console.log(saludar());
+console.log(saludar("Marco"));
+
 
 
 
